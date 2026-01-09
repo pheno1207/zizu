@@ -7,6 +7,10 @@
         "npx unocss": true,
         "git add": true,
         "git commit": true,
-        "git push": true
+        "git push": true,
+        "/^\\(Get-Content \\.\\\\app\\\\page\\.jsx\\) \\| Where-Object \\{ \\$_ -notmatch '\\^```' \\} \\| Set-Content \\.\\\\app\\\\page\\.jsx; \\(Get-Content \\.\\\\app\\\\layout\\.jsx\\) \\| Where-Object \\{ \\$_ -notmatch '\\^```' \\} \\| Set-Content \\.\\\\app\\\\layout\\.jsx; \\(Get-Content \\.\\\\uno\\.config\\.ts\\) \\| Where-Object \\{ \\$_ -notmatch '\\^```' \\} \\| Set-Content \\.\\\\uno\\.config\\.ts; \\(Get-Content \\.\\\\styles\\\\uno\\.css\\) \\| Where-Object \\{ \\$_ -notmatch '\\^```' \\} \\| Set-Content \\.\\\\styles\\\\uno\\.css; git add -A; git commit -m \"fix: remove markdown fences from source files\" ; echo \"commit skipped\"; git rev-parse --abbrev-ref HEAD$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     }
 }
