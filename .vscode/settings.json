@@ -4,6 +4,9 @@
         "npm create": true,
         "npm init": true,
         "npm install": true,
-        "npx unocss": true
+        "npx unocss": true,
+        "git add": true,
+        "git commit": true,
+        "git push": true
     }
 }

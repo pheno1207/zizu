@@ -4,22 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "uno:build": "unocss -c uno.config.ts -o ./styles/uno.css",
-    "uno:watch": "unocss -c uno.config.ts -w -o ./styles/uno.css"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "uno:build": "unocss \"app/**/*.{js,jsx,ts,tsx}\" -c uno.config.ts -o ./styles/uno.css",
+  "uno:watch": "unocss \"app/**/*.{js,jsx,ts,tsx}\" -c uno.config.ts -w -o ./styles/uno.css"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@supabase/auth-helpers-nextjs": "^0.15.0",
+    "@supabase/supabase-js": "^2.90.1",
     "next": "^14.2.35",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@unocss/preset-attributify": "^66.5.12",
+    "@unocss/preset-icons": "^66.5.12",
     "@unocss/preset-uno": "^66.5.12",
     "unocss": "^66.5.12"
   }
