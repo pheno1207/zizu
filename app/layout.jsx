@@ -1,4 +1,4 @@
-import '../styles/uno.css'
+﻿import '../styles/uno.css'
 
 export const metadata = {
   title: 'Next.js 14 + UnoCSS',

@@ -1,9 +1,9 @@
-import { defineConfig, presetUno, presetAttributify, presetIcons } from 'unocss'
+Ôªøimport { defineConfig, presetUno, presetAttributify, presetIcons } from 'unocss'
 
 export default defineConfig({
   presets: [
     presetUno(),
-    presetAttributify(), // ?çÏÑ± Î∞©Ïãù ?úÏÑ±??
-    presetIcons({ scale: 1.2, cdn: 'https://esm.sh/' }), // ?ÑÏù¥ÏΩ??úÏÑ±??
+    presetAttributify(),
+    presetIcons({ scale: 1.2, cdn: 'https://esm.sh/' }),
   ],
 })
